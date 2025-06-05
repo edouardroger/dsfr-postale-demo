@@ -30,7 +30,7 @@ export default defineComponent({
   <div class="fr-container">
     <div class="fr-grid-row">
       <div class="fr-col-lg-12">
-        <DsfrPostale label="Votre adresse postale à Poitiers" hint="Saisissez au moins 3 caractères pour obtenir des suggestions" postcode="86000" @addressSelected="handleAddressSelected" />
+        <DsfrPostale label="Votre adresse postale" hint="Saisissez au moins 3 caractères pour obtenir des suggestions" @addressSelected="handleAddressSelected" />
         <ul class="resultat">
           <li v-for="(value, key) in adresse"> {{ key }} : {{ value }} </li>
         </ul>
